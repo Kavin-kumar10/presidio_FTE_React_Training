@@ -1,0 +1,11 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.option[day-2]{
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
+}
