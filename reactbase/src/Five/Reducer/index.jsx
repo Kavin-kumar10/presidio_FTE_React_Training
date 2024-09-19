@@ -1,4 +1,4 @@
-// Reducer function
+// Reducer function for add remove and sorting the items
 const itemReducer = (state, action) => {
     switch (action.type) {
         case 'ADD_ITEM':

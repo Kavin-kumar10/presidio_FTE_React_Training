@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+//Navbar based on the date of task assigned
 const Navbar = () =>{
     return(
         <div className="Navbar fixed text-slate-50 bg-slate-600 top-0 left-0 w-screen px-14 py-5 flex justify-between items-center">

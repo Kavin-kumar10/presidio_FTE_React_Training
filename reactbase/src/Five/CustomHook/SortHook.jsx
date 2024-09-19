@@ -1,5 +1,6 @@
+import React from "react";
 
-// Custom hook for filtering and sorting
+// custom hook for filter sort
 const useFilterSort = (items, searchTerm, sortOption) => {
     const filteredItems = items.filter(item =>
         item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||

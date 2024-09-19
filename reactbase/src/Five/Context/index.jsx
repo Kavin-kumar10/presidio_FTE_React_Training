@@ -11,7 +11,7 @@ const initialState = {
 };
 
 
-// Provider component
+// Provider components
 export const ItemProvider = ({ children }) => {
     const [state, dispatch] = useReducer(itemReducer, initialState);
     
