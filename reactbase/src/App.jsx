@@ -3,11 +3,13 @@ import './App.css';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import Three from './Three';
 import useThrottle from './CustomHook/useThrottle';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App bg-slate-700">
+        <Navbar/>
         <Routes>
           <Route element={<Three/>} path='/Three'/>
         </Routes>
