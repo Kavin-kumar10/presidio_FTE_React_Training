@@ -6,6 +6,7 @@ import useThrottle from './CustomHook/useThrottle';
 import Navbar from './Navbar';
 import Five from './Five';
 import { ItemProvider } from './Five/Context';
+import ParentComponent from './Learn';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="App bg-slate-700">
         <Navbar/>
         <Routes>
+          <Route element={<ParentComponent/>} path='/Learn'/>
           <Route element={<Three/>} path='/Three'/>
           <Route element={<Five/>} path='/Five'/>
         </Routes>

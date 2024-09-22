@@ -6,8 +6,10 @@ import useFilterSort from './CustomHook/SortHook';
 // Fifth session task 
 const Five = () => {
     const { state, dispatch } = useContext(ItemContext);
+
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
+    
     const [searchTerm, setSearchTerm] = useState('');
     const [sortOption, setSortOption] = useState('');
     const searchRef = useRef(null);
