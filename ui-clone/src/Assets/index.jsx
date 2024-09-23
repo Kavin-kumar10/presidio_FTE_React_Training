@@ -2,6 +2,9 @@ export const bg = require('./Bg.png')
 export const employee = require("./Employee.png")
 export const Logo = require('./Logo.png')
 export const Banner = require('./banner.png')
+export const Play = require('./Play.png')
+export const Poster = require('./Poster.png')
+export const Bread = require('./Bread.png')
 
 // Landpage Box Assets
 

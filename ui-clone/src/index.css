@@ -13,3 +13,21 @@
       -webkit-text-stroke: 4px black;
     }
   }
+
+  .underline-center::after {
+    content: '';
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    border-bottom: 6px solid #FFBA43;
+  }
+
+  .underline-center-white::after {
+    content: '';
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    border-bottom: 6px solid white;
+  }

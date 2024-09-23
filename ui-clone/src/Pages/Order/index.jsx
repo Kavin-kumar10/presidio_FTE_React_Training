@@ -36,7 +36,7 @@ const Order = () =>{
                 <img  src={Vegetables} alt="" />
             </section>
             <section className='flex flex-col justify-center items-center gap-10'>
-                <h1 className='font-bold text-5xl'>New Organic Add-ons</h1>
+                <h1 className='font-bold text-5xl underline-center'>New Organic Add-ons</h1>
                 <ul className='flex gap-3 items-center justify-center text-lg'>
                 <li className='px-7 py-2 rounded-md bg-[#3BB77E] text-white'>Breakfast</li>
                 <li className='px-7 py-2'>Fruites</li>
