@@ -7,7 +7,11 @@ module.exports = {
       colors:{
         primary:"#624E88",
         secondary:"#F5EFFF"
-      }
+      },
+      fontFamily:{
+        first:["Crimson Text", "serif"],
+        second:["Playwrite DE Grund", "cursive"]
+      },
     },
   },
   plugins: [],

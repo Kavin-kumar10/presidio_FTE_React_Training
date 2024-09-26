@@ -1,7 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import Landpage from './Pages/Landpage';
-import Quiz from './Pages/Category';
+import Category from './Pages/Category';
+import Test from './Pages/Test';
+import ScoreView from './Pages/ScoreView';
 
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<Landpage/>}/>
-          <Route path='/Quiz' element={<Quiz/>}/>
+          <Route path='/Category' element={<Category/>}/>
+          <Route path='/Test' element={<Test/>}/>
+          <Route path='/Score' element={<ScoreView/>}/>
         </Routes>
       </div>
     </Router>
