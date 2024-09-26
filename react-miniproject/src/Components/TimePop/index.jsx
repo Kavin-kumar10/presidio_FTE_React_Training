@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 
 const TimePop = () =>{
     const dispatch = useDispatch();
+    
     return(
     <div className="TimePop h-screen z-50 flex items-center justify-center w-screen fixed top-0 left-0 bg-[rgba(225,225,225,0.8)]">
         <div className="w-4/5 sm:w-1/2 md:w-1/3 rounded-md bg-white shadow-md">

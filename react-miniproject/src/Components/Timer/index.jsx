@@ -22,7 +22,7 @@ const Timer = () => {
 
   return (
     <div>
-      <h1 className="text-white px-5 py-3 bg-primary opacity-70 rounded-md">Time Left: {Math.floor(time / 60)}:{(time % 60).toString().padStart(2, '0')}</h1>
+      <h1 className="text-white text-sm md:text-lg px-3 py-1 sm:px-5 sm:py-3 bg-primary opacity-70 rounded-md flex items-center justify-center gap-1"> <span className="hidden md:block">Time Left:</span> {Math.floor(time / 60)}:{(time % 60).toString().padStart(2, '0')}</h1>
     </div>
   );
 };

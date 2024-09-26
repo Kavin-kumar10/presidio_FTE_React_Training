@@ -6,7 +6,7 @@ const Question = () =>{
     const CurrentQuestion = useSelector(state => state.Quiz.CurrentQuestion);
     return(
         <div className="Question gap-10 flex flex-col min-h-[40vh]">
-            <h1 className="text-3xl font-semibold text-slate-600">{CurrentQuestion.question}</h1>
+            <h1 className="text-3xl font-semibold text-slate-800">{CurrentQuestion.question}</h1>
             <div className="flex flex-col gap-5">
                 {
                     CurrentQuestion.allAnswers?.map((elem)=>

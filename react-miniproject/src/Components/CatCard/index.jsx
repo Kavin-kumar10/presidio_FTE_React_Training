@@ -11,7 +11,7 @@ const CatCard = ({elem}) =>{
 
     return(
         <form className="CatCard bg-white flex flex-col items-start rounded-md p-3 shadow shadow-black gap-3">
-            <p className="opacity-50">Test id : {elem.id}</p>
+            <p className="opacity-50">Duration : 1 min</p>
             <div className="flex justify-between items-center w-full">
                 <h1 className="text-xl font-bold">{elem.name}</h1>
                 <FaCirclePlay onClick={()=>dispatch(setParams({Category:elem.id,Difficulty:"",CategoryName:elem.name}))} size={40} className="text-primary"/>

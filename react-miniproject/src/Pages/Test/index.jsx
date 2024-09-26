@@ -10,9 +10,11 @@ import { startQuiz } from "../../Redux/QuizSlice";
 import { prevQuestion } from "../../Redux/QuizSlice";
 import Timer from "../../Components/Timer";
 import TimePop from "../../Components/TimePop";
+import { useNavigate } from "react-router-dom";
 
 const Test = () =>{
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const category = useSelector(state => state.Quiz.params.CategoryName)
     const loading = useSelector(state => state.Quiz.loading);
     const Questions = useSelector(state => state.Quiz.Questions)
@@ -20,11 +22,9 @@ const Test = () =>{
     const SubmitPopState = useSelector(state => state.Quiz.SubmitPopState)
     const selectedValue = useSelector(state => state.Quiz.ChoosenOptions);
     const timePopHandler = useSelector(state => state.Quiz.timePopState)
-    console.log(timePopHandler + " --------- ");
-    
 
     useEffect(() => {
-        if (Questions.length > 0) {
+        if (Questions?.length > 0) {
           dispatch(startQuiz());
         }
       }, [Questions, dispatch]);
